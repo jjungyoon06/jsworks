@@ -1,5 +1,5 @@
 //입력
-let score = 100;
+let score = Number(prompt("점수를 입력하세요"));
 let grade = ""; //문자형 변수 초기화
 
 //연산 및 출력
