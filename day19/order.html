@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주문 정보 자동 입력</title>
+    <link rel="stylesheet" href="./css/order.css"> 
+    
+</head>
+<body>
+    <div id="container">
+        <form name="order" method="post">
+            <fieldset>
+                <legend>주문정보</legend>
+                <ul>
+                    <li>
+                        <label class="field" for="billingname">이름</label>
+                        <input type="text" class="inputbox" name="billingname" id="billingname">
+                    </li>
+                    <li>
+                        <label class="field" for="billingtel">연락처</label>
+                        <input type="text" class="inputbox" name="billingtel" id="billingtel">
+                    </li>
+                    <li>
+                        <label class="field" for="billingadd">주소</label>
+                        <input type="text" class="inputbox" name="billingadd" id="billingadd">
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+        <form name="ship">
+            <fieldset>
+                <legend>배송정보</legend>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="shippinginfo" name="shippinginfo">
+                        <label for="shippinginfo" class="check">주문 정보와 배송 정보가 같습니다.</label>
+                    </li>
+                    <li>
+                        <label class="field" for="shippingname">이름</label>
+                        <input type="text" class="inputbox" name="shippingname" id="shippingname">
+                    </li>
+                    <li>
+                        <label class="field" for="shippingtel">연락처</label>
+                        <input type="text" class="inputbox" name="shippingtel" id="shippingtel">
+                    </li>
+                    <li>
+                        <label class="field" for="shippingadd">주소</label>
+                        <input type="text" class="inputbox" name="shippingadd" id="shippingadd">
+                    </li>
+                </ul>
+            </fieldset>
+            <button type="submit" class="order">결제하기</button>
+        </form>
+    </div>
+   <script src="./js/order.js"></script>
+</body>
+</html>
