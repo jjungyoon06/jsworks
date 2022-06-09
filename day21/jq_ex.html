@@ -12,7 +12,8 @@
             $("h2").css("color","blue");
             $("#intro").css("background","greenyellow");
             $(".info").css({"border-top" : "2px solid #ccc"});
-            $(".info").append("<p>나는 서울에 살아요</p>"); //append 뒷 부분 추가 preappend 앞 부분 추가
+            //$(".info").append("<p>나는 서울에 살아요</p>"); //append 뒷 부분 추가 
+            $(".info").prepend("<p>나는 서울에 살아요</p>"); //prepend 앞 부분 추가
             $(".pic").html("<img src='./img/cat.jpg'>"); //html 태그
             $("#msg").text("오늘도 좋은 하루 되세요!"); //문자열 추가
             $("#msg").css({
