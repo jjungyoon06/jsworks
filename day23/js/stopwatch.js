@@ -63,7 +63,7 @@ function stopWatch(){
         //정지 - stop
             $("#stopbtn").click(function(){
                 if(time != 0){
-                    $(".fa").css("color","#f60")
+                    $(".fa-solid").css("color","#f60")
                     this.style.color = "#555";
                 clearInterval(timer);
                 sw = true;
